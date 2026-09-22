@@ -1,0 +1,14 @@
+{
+  "name": "WebNC",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+
+  "features": {
+    "ghcr.io/devcontainers/features/mysql:1": {
+      "version": "8.0"
+    }
+  },
+
+  "forwardPorts": [3000, 3306],
+
+  "postCreateCommand": "cd miniweb/news && npm install"
+}
